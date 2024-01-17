@@ -198,7 +198,10 @@
       
         </main>
         <footer>
-          <p>&copy; 2023 All rights reserved.</p>
+          <p>&copy; <span id="current-year"></span> All rights reserved.</p>
         </footer>
+        <script>
+          document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
       </body>
       </html>
